@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone</title>
+    <link rel="icon" href="assets/Amazon_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second"><b>India</b></p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="search-suggestions" id="search-suggestions" style="display: none;"></div>
+            </div>
+            <div class="language border" id="language-selector">
+                <div class="nav-flag"></div>
+                <div class="nav-lang"><b>EN</b></div>
+                <div class="lang-more">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="lang-dropdown" id="lang-dropdown" style="display: none;">
+                    <ul>
+                        <li>English</li>
+                        <li>हिन्दी (Hindi)</li>
+                        <li>বাংলা (Bengali)</li>
+                        <li>తెలుగు (Telugu)</li>
+                        <li>मराठी (Marathi)</li>
+                        <li>தமிழ் (Tamil)</li>
+                        <li>ગુજરાતી (Gujarati)</li>
+                        <li>ಕನ್ನಡ (Kannada)</li>
+                        <li>മലയാളം (Malayalam)</li>
+                        <li>ଓଡ଼ିଆ (Odia)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-signin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second"><b>Account & Lists</b></p>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second"><b>& Orders</b></p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <b>Cart</b>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i> 
+                All
+            </div>
+            <div class="panel-ops">
+              <p class="border">Today's Deals</p>
+              <p class="border">Customer Service</p>
+              <p class="border">Registry</p>
+              <p class="border">Gift Cards</p>
+              <p class="border">Sell</p>
+            </div>
+            <div class="panel-deals border">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class=" box">
+            <div class="box-content">
+                <h2>Personal Care</h2>
+                <div class="box-img" style="background-image: url('assets/box1 img.jpg');"></div>
+                <p><a href="#">Shop now</a></p></div>
+        </div>
+        <div class=" box">
+            <div class="box-content">
+                <h2>Upgrade your Office Furniture</h2>
+                <div class="box-img" style="background-image: url('assets/box-2 img.jpg');"></div>
+                <p><a href="#">Shop now</a></p></div>
+             </div>
+        <div class=" box">
+            <div class="box-content">
+                <h2>Deals on Shoes</h2>
+                <div class="box-img" style="background-image: url('assets/box-3.jpg');"></div>
+                <p><a href="#">Shop now</a></p></div>
+             </div>
+        <div class=" box">
+            <div class="box-content">
+            <h2>Player's paradise starts here</h2>
+            <div class="box-img" style="background-image: url('assets/box-4 img.jpg');"></div>
+            <p><a href="#">Shop now</a></p></div></div>
+
+            <div class=" box">
+                <div class="box-content">
+                    <h2>Activity trackers & Smartwatches</h2>
+                    <div class="box-img" style="background-image: url('assets/box-5 img.jpg');"></div>
+                    <p><a href="#">Shop now</a></p></div>
+            </div>
+            <div class=" box">
+                <div class="box-content">
+                    <h2>Toys under 25$</h2>
+                    <div class="box-img" style="background-image: url('assets/box-6 img.jpg');"></div>
+                    <p><a href="#">Shop now</a></p></div>
+                 </div>
+            <div class=" box">
+                <div class="box-content">
+                    <h2>Creating business solutions</h2>
+                    <div class="box-img" style="background-image: url('assets/box-7 img.jpg');"></div>
+                    <p><a href="#">See more software products</a></p></div>
+                 </div>
+            <div class=" box">
+                <div class="box-content">
+                <h2>Beauty picks</h2>
+                <div class="box-img" style="background-image: url('assets/box-8 img.jpg');"></div>
+                <p><a href="#">Shop now</a></p></div></div>
+    </div>
+
+    <!-- Authentication Full Page -->
+    <div id="auth-page" style="display:none; min-height:100vh; width:100vw; background:#fff; position:fixed; top:0; left:0; z-index:2000; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+      <!-- Signup Form -->
+      <div id="signup-form" style="display:none; width:100%; max-width:350px;">
+        <h2>Sign Up</h2>
+        <input type="email" id="signup-email" placeholder="Email" required style="width:100%;margin-bottom:8px;"/>
+        <input type="password" id="signup-password" placeholder="Password" required style="width:100%;margin-bottom:8px;"/>
+        <button id="signup-btn" style="width:100%;">Sign Up</button>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </div>
+      <!-- Login Form -->
+      <div id="login-form" style="width:100%; max-width:350px;">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" required style="width:100%;margin-bottom:8px;"/>
+        <input type="password" id="login-password" placeholder="Password" required style="width:100%;margin-bottom:8px;"/>
+        <button id="login-btn" style="width:100%;">Login</button>
+        <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+      </div>
+    </div>
+    <!-- End Authentication Full Page -->
+
+    <footer>
+        <a href="#"><div class="foot-panel1">
+            Back to Top
+        </div></a>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#">Careers<a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+
+            </ul>
+
+            <ul>
+                <p>Make Money with Us</p>
+                <a href="#">Sell products on Amazon<a>
+                <a href="#">Sell on Amazon Business</a>
+                <a href="#">Sell apps on Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Self-Publish with Us</a>
+                <a href="#">Host an Amazon Hub</a>
+
+            </ul>
+
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a href="#">Careers<a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+
+            </ul>
+
+            <ul>
+                <p>Let Us Help You</p>
+                <a href="#">Careers<a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices </a>
+            </div>
+            <div class="copyright">
+                © 1996-2024, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <!-- Firebase Analytics (optional) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+    <!-- Firebase config (env) -->
+    <script src="env/firebase-config.js"></script>
+    <!-- Your script -->
+    <script src="script.js"></script>
+</body>
+</html>
