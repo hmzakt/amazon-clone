@@ -243,12 +243,13 @@ footer {
 .foot-panel1 {
     background-color: #37475A;
     color: white;
-    height: 50px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-family: inherit;
+    padding: 0;
 }
 
 footer a {
@@ -262,58 +263,67 @@ footer a :hover{
 .foot-panel2 {
     background-color: #222f3d;
     color: white;
-    height: 500px;
+    min-height: 180px;
     display: flex;
     justify-content: space-evenly;
+    padding: 18px 0 10px 0;
+    font-size: 0.85rem;
 }
 
 ul a {
     display: block;
     font-family: inherit;
-    font-size: 0.85rem;
-    margin-top: 8px;
+    font-size: 0.8rem;
+    margin-top: 4px;
     color: #dddddd;
+    padding: 0;
 }
 
 ul {
-    margin-top: 10px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 footer p {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
     font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .foot-panel3 {
     background-color: #222f3d;
     border-top: 0.5px solid whitesmoke;
-    height: 70px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
  footer .logo {
     background-image: url(assets/amazon\ logo\ footer.png);
     background-size: cover;
-    height: 50px;
-    width: 100px;
+    height: 36px;
+    width: 80px;
 }
 
 .foot-panel4 {
     font-size: 0.7rem;
-     text-align: center;
-    height: 80px;
+    text-align: center;
+    height: 38px;
     background-color: #0F1111;
     color: white;
+    padding: 6px 0 0 0;
 }
 
 .pages {
-    padding-top: 25px;
+    padding-top: 6px;
+    margin-bottom: 2px;
 }
 
 .copyright {
-     padding-top: 5px;
+    padding-top: 2px;
 }
 
 #language-selector {
