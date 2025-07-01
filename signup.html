@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Amazon Clone</title>
+    <link rel="icon" href="assets/Amazon_icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Sign Up</h2>
+        <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo-2000-500x281.png" alt="Amazon Logo" style="display:block;margin:0 auto 18px auto;max-width:180px;">
+        <input type="text" id="signup-name" placeholder="Name" required style="width:100%;margin-bottom:8px;"/>
+        <input type="email" id="signup-email" placeholder="Email" required style="width:100%;margin-bottom:8px;"/>
+        <input type="password" id="signup-password" placeholder="Password" required style="width:100%;margin-bottom:8px;"/>
+        <button id="signup-btn" style="width:100%;">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        <div id="signup-error" style="color:red;"></div>
+    </div>
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <!-- Firebase config (env) -->
+    <script src="env/firebase-config.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html> 

@@ -56,7 +56,9 @@
                 </div>
             </div>
             <div class="nav-signin border">
-                <p><span>Hello, sign in</span></p>
+                <span id="user-greeting" style="margin-right:8px;"></span>
+                <a href="login.html" id="login-link"><span>Hello, sign in</span></a>
+                <button id="logout-btn" style="display:none;">Logout</button>
                 <p class="nav-second"><b>Account & Lists</b></p>
             </div>
 
@@ -143,27 +145,6 @@
                 <div class="box-img" style="background-image: url('assets/box-8 img.jpg');"></div>
                 <p><a href="#">Shop now</a></p></div></div>
     </div>
-
-    <!-- Authentication Full Page -->
-    <div id="auth-page" style="display:none; min-height:100vh; width:100vw; background:#fff; position:fixed; top:0; left:0; z-index:2000; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-      <!-- Signup Form -->
-      <div id="signup-form" style="display:none; width:100%; max-width:350px;">
-        <h2>Sign Up</h2>
-        <input type="email" id="signup-email" placeholder="Email" required style="width:100%;margin-bottom:8px;"/>
-        <input type="password" id="signup-password" placeholder="Password" required style="width:100%;margin-bottom:8px;"/>
-        <button id="signup-btn" style="width:100%;">Sign Up</button>
-        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
-      </div>
-      <!-- Login Form -->
-      <div id="login-form" style="width:100%; max-width:350px;">
-        <h2>Login</h2>
-        <input type="email" id="login-email" placeholder="Email" required style="width:100%;margin-bottom:8px;"/>
-        <input type="password" id="login-password" placeholder="Password" required style="width:100%;margin-bottom:8px;"/>
-        <button id="login-btn" style="width:100%;">Login</button>
-        <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
-      </div>
-    </div>
-    <!-- End Authentication Full Page -->
 
     <footer>
         <a href="#"><div class="foot-panel1">
