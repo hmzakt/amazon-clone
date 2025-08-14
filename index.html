@@ -46,7 +46,7 @@
                         <li>हिन्दी (Hindi)</li>
                         <li>বাংলা (Bengali)</li>
                         <li>తెలుగు (Telugu)</li>
-                        <li>मराठी (Marathi)</li>
+                        <li>మరాఠీ (Marathi)</li>
                         <li>தமிழ் (Tamil)</li>
                         <li>ગુજરાતી (Gujarati)</li>
                         <li>ಕನ್ನಡ (Kannada)</li>
@@ -66,9 +66,10 @@
                 <p><span>Returns</span></p>
                 <p class="nav-second"><b>& Orders</b></p>
             </div>
-            <div class="nav-cart border">
+            <div class="nav-cart border" id="cart-icon">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <b>Cart</b>
+                <span class="cart-count" id="cart-count">0</span>
             </div>
         </div>
 
@@ -93,6 +94,14 @@
     <div class="hero-section">
         <div class="hero-msg">
             <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="products-section">
+        <h2 class="section-title">Today's Deals</h2>
+        <div class="products-grid" id="products-grid">
+            <!-- Products will be dynamically added here -->
         </div>
     </div>
 
@@ -144,6 +153,25 @@
                 <h2>Beauty picks</h2>
                 <div class="box-img" style="background-image: url('assets/box-8 img.jpg');"></div>
                 <p><a href="#">Shop now</a></p></div></div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button class="close-cart" id="close-cart">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: $<span id="cart-total">0.00</span></span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
     </div>
 
     <footer>
